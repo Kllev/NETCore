@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script>
+  
+   $.ajax({  
+       url: "https://localhost:44316/API/Persons/GetAllProfile",
+       success: function (result) {
+           console.log(result);
+    }
+    })
+</script>
